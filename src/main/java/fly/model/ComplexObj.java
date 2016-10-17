@@ -8,7 +8,7 @@ import java.util.Set;
 /**
  * Created by jinxiaofei on 16/4/14.
  */
-public class ComplextObj {
+public class ComplexObj {
     private Properties adminEmails;
     private List someList;
     private Map someMap;

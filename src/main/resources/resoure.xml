@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="resourceService" class="fly.service.ResourceService"></bean>
     <!--复杂的对象的参数注入问题-->
-    <bean id="moreComplexObject" class="fly.model.ComplextObj">
+    <bean id="moreComplexObject" class="fly.model.ComplexObj">
         <!-- results in a setAdminEmails(java.util.Properties) call -->
         <property name="adminEmails">
             <props>

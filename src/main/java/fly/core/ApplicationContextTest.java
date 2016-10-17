@@ -16,7 +16,7 @@ public class ApplicationContextTest {
         userService.getTestService().sayTest("dasda");
         User user=userService.getUser();
         System.out.println(user);*/
-       /* ComplextObj complextObj=applicationContext.getBean(ComplextObj.class);
+       /* ComplexObj complextObj=applicationContext.getBean(ComplexObj.class);
         System.out.println(complextObj.getAdminEmails().getProperty("support"));
         System.out.println(complextObj.getSomeList());
         System.out.println(complextObj.getSomeMap());
