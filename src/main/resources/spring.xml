@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
     <import resource="classpath*:lesson1.xml"/>
+    <import resource="classpath:data/lesson2.xml"/>
+    <import resource="resoure.xml"/>
+    <bean id="peopleFactory" class="fly.context.BeanFactory"/>
+    <bean id="staff" factory-bean="peopleFactory" factory-method="getStaff"/>
+    <bean id="boss" factory-bean="peopleFactory" factory-method="getBoss"/>
+    <bean id="user" class="fly.model.User"/>
+
+    <bean id="userService" class="fly.service.UserService">
+        <constructor-arg index="0" ref="resourceService"/>
+        <constructor-arg index="1" ref="testService"/>
+        <constructor-arg index="2" ref="user"/>
+    </bean>
 
 </beans>

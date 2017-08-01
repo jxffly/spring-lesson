@@ -1,4 +1,4 @@
-package fly.lesson1;
+package fly.lesson1.model;
 
 /**
  * Created by jinxiaofei on 16/4/27.

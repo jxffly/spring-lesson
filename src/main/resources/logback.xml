@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod=" 5 seconds" debug="true">
+    <!--需要应用在自己配置START-->
+    <property name="APP_NAME" value="spring-test"/>
+    <property name="level" value="INFO"/>
+    <!-- 控制台输出 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %class{56}.%M:%L - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <root level="${level}">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>

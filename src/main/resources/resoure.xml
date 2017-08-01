@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="resourceService" class="fly.service.ResourceService"></bean>
     <!--复杂的对象的参数注入问题-->
@@ -47,7 +47,7 @@
         <bean id="child" parent="parent" class="example.SubObject">
             <property name="adminEmails">
                 <!-- the merge is specified on the child collection definition -->
-                <props merge="false">
+                <props merge="true">
                     <prop key="sales">sales@example.com</prop>
                     <prop key="support">support@example.co.uk</prop>
                 </props>
