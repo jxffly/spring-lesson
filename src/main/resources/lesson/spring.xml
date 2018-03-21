@@ -3,7 +3,8 @@
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="staff" class="fly.model.Staff" autowire="byType"/>
-    <bean id="boss" class="fly.model.Boss" autowire="byType"/>
+    <!--default auto-wiring byType-->
+    <bean id="staff" class="spring.model.sub.Staff"/>
+    <bean id="boss" class="spring.model.sub.Boss"/>
 
 </beans>

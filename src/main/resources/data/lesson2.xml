@@ -2,9 +2,9 @@
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="student" class="fly.lesson1.model.Student">
+    <bean id="student" class="spring.model.common.Student">
         <property name="name" value="zhangsan"/>
     </bean>
-    <bean id="teacher" class="fly.lesson1.model.Teacher"/>
-    <bean id="testService" class="fly.service.TestService"/>
+    <bean id="teacher" class="spring.model.common.Teacher"/>
+    <bean id="testService" class="spring.service.TestService"/>
 </beans>

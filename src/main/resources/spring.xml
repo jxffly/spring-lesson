@@ -6,12 +6,12 @@
     <import resource="classpath*:lesson1.xml"/>
     <import resource="classpath:data/lesson2.xml"/>
     <import resource="resoure.xml"/>
-    <bean id="peopleFactory" class="fly.context.BeanFactory"/>
+    <bean id="peopleFactory" class="spring.context.BeanFactory"/>
     <bean id="staff" factory-bean="peopleFactory" factory-method="getStaff"/>
     <bean id="boss" factory-bean="peopleFactory" factory-method="getBoss"/>
-    <bean id="user" class="fly.model.User"/>
+    <bean id="user" class="spring.model.common.User"/>
 
-    <bean id="userService" class="fly.service.UserService">
+    <bean id="userService" class="spring.service.UserService">
         <constructor-arg index="0" ref="resourceService"/>
         <constructor-arg index="1" ref="testService"/>
         <constructor-arg index="2" ref="user"/>
