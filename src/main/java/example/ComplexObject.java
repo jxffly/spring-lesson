@@ -1,5 +1,6 @@
 package example;
 
+
 import java.util.Properties;
 
 /**
