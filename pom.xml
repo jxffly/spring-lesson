@@ -9,7 +9,7 @@
 
     <packaging>jar</packaging>
     <properties>
-        <spring.vaersion>5.0.5.RELEASE</spring.vaersion>
+        <spring.vaersion>5.2.22.RELEASE</spring.vaersion>
     </properties>
 
     <dependencies>
